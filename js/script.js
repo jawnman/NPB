@@ -104,6 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sectionsToAnimate = [
         document.querySelector('.hero-content'),
         document.querySelector('.location-bar'),
+        document.querySelector('.reviews-section'),
         document.querySelector('.section-header'),
         ...document.querySelectorAll('.barber-card')
     ];
