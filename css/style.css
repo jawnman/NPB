@@ -305,7 +305,7 @@ footer {
     color: var(--text-primary); padding: 64px 0 32px;
 }
 .footer-content {
-    display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 64px;
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 48px; margin-bottom: 64px;
 }
 .footer-brand { display: flex; flex-direction: column; gap: 12px; }
 .footer-logo {
