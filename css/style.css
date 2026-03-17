@@ -330,7 +330,7 @@ footer {
 }
 .footer-ig:hover { color: var(--accent-color); }
 .footer-bottom {
-    text-align: left; padding-top: 24px;
+    text-align: center; padding-top: 24px;
     border-top: 1px solid var(--border-color);
     color: var(--text-secondary); font-size: 0.85rem;
 }
@@ -543,3 +543,4 @@ main, footer {
         flex-direction: column;
     }
 }
+
