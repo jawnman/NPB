@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | No Push Backs Barbershop - Bristol, PA</title>
+    <title>Contact | No Push Backs Barbershop - Bristol, PA</title>
+    <meta name="description" content="Contact No Push Backs Barbershop for any questions. 204 Mill St Suite 102, Bristol PA.">
     <link rel="icon" type="image/png" href="favicon.png">
-    <meta name="description" content="Gallery coming soon - No Push Backs Barbershop, 204 Mill St Suite 102, Bristol PA. Call (215) 447-8392.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <header class="main-header">
@@ -24,8 +24,8 @@
             <nav class="main-nav">
                 <a href="index.html">Home</a>
                 <a href="index.html#barbers">Our Barbers</a>
-                <a href="gallery.html" class="nav-active">Gallery</a>
-                <a href="contact.html">Contact</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" class="nav-active">Contact</a>
             </nav>
             <div class="header-cta">
                 <a href="https://www.instagram.com/nopushbacks/?hl=en" target="_blank" class="ig-btn" aria-label="Instagram">
@@ -35,19 +35,42 @@
             </div>
         </div>
     </header>
-    <main class="gallery-main">
-        <div class="coming-soon-wrapper">
-            <div class="coming-soon-box">
-                <div class="cs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg></div>
-                <p class="cs-eyebrow">No Push Backs Barbershop</p>
-                <h1 class="cs-title">Gallery</h1>
-                <div class="cs-badge">Coming Soon</div>
-                <p class="cs-desc">We are curating a showcase of our best cuts and styles.<br>In the meantime, follow us on Instagram to see the latest work.</p>
-                <a href="https://www.instagram.com/nopushbacks/?hl=en" target="_blank" class="btn btn-primary cs-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> Follow @nopushbacks</a>
-                <a href="index.html" class="cs-back-link">&larr; Back to Home</a>
+
+    <main class="contact-main">
+        <div class="contact-container fade-in-section">
+            <div class="contact-header">
+                <h1>Get in Touch</h1>
+                <p>Have a question about a cut or a booking? Drop us a line below.</p>
             </div>
+            
+            <!-- We use Web3Forms for absolutely free, secure static-site forms without backends. -->
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                
+                <!-- Replace this access key with yours from web3forms.com -->
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <input type="hidden" name="subject" value="New Website Inquiry: No Push Backs">
+                
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" class="form-control" placeholder="How can we help?" required></textarea>
+                </div>
+                
+                <!-- Optional: Web3Forms redirects to a success page natively, or you can add a redirect token here -->
+                <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+            </form>
         </div>
     </main>
+
     <footer>
         <div class="container footer-content">
             <div class="footer-brand"><img src="npb.jpg" alt="No Push Backs Logo" class="footer-logo"><h3>No Push Backs</h3><p>Barbershop</p></div>
@@ -58,4 +81,3 @@
     </footer>
 </body>
 </html>
-

@@ -1,0 +1,112 @@
+﻿/* contact.css */
+.contact-main {
+    padding-top: 100px;
+    background: var(--bg-page);
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 64px;
+}
+
+.contact-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 40px 24px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 56px;
+    box-shadow: var(--shadow-2);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-header h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.contact-header p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all var(--transition-fast);
+}
+
+.form-control::placeholder {
+    color: #9AA0A6;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background: var(--bg-surface);
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+}
+
+textarea.form-control {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.submit-btn {
+    margin-top: 16px;
+    width: 100%;
+    padding: 16px;
+    font-size: 1.05rem;
+    justify-content: center;
+    box-shadow: var(--shadow-2);
+}
+
+.submit-btn:hover {
+    box-shadow: var(--shadow-3);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 32px 24px;
+        margin: 24px 16px;
+    }
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+}
